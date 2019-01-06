@@ -1,0 +1,168 @@
+{
+  "champion": "Ekko", 
+  "title": "EkkoCS", 
+  "map": "CS", 
+  "mode": "ODIN", 
+  "type": "riot", 
+  "customTag": "", 
+  "extensionPage": false, 
+  "customPanel": null, 
+  "blocks": [
+    {
+      "type": "starting", 
+      "recMath": false, 
+      "recSteps": false, 
+      "minSummonerLevel": -1, 
+      "maxSummonerLevel": -1, 
+      "showIfSummonerSpell": "", 
+      "hideIfSummonerSpell": "", 
+      "items": [
+        {
+          "id": "1056", 
+          "count": 1, 
+          "hideCount": false
+        }, 
+        {
+          "id": "2003", 
+          "count": 2, 
+          "hideCount": false
+        }, 
+        {
+          "id": "3340", 
+          "count": 1, 
+          "hideCount": false
+        }
+      ]
+    }, 
+    {
+      "type": "early", 
+      "recMath": false, 
+      "recSteps": false, 
+      "minSummonerLevel": -1, 
+      "maxSummonerLevel": -1, 
+      "showIfSummonerSpell": "", 
+      "hideIfSummonerSpell": "", 
+      "items": [
+        {
+          "id": "3108", 
+          "count": 1, 
+          "hideCount": false
+        }, 
+        {
+          "id": "3802", 
+          "count": 1, 
+          "hideCount": false
+        }, 
+        {
+          "id": "1001", 
+          "count": 1, 
+          "hideCount": false
+        }
+      ]
+    }, 
+    {
+      "type": "essential", 
+      "recMath": false, 
+      "recSteps": false, 
+      "minSummonerLevel": -1, 
+      "maxSummonerLevel": -1, 
+      "showIfSummonerSpell": "", 
+      "hideIfSummonerSpell": "", 
+      "items": [
+        {
+          "id": "3165", 
+          "count": 1, 
+          "hideCount": false
+        }, 
+        {
+          "id": "3001", 
+          "count": 1, 
+          "hideCount": false
+        }, 
+        {
+          "id": "3020", 
+          "count": 1, 
+          "hideCount": false
+        }
+      ]
+    }, 
+    {
+      "type": "offensive", 
+      "recMath": false, 
+      "recSteps": false, 
+      "minSummonerLevel": -1, 
+      "maxSummonerLevel": -1, 
+      "showIfSummonerSpell": "", 
+      "hideIfSummonerSpell": "", 
+      "items": [
+        {
+          "id": "3100", 
+          "count": 1, 
+          "hideCount": false
+        }, 
+        {
+          "id": "3135", 
+          "count": 1, 
+          "hideCount": false
+        }, 
+        {
+          "id": "3089", 
+          "count": 1, 
+          "hideCount": false
+        }
+      ]
+    }, 
+    {
+      "type": "defensive", 
+      "recMath": false, 
+      "recSteps": false, 
+      "minSummonerLevel": -1, 
+      "maxSummonerLevel": -1, 
+      "showIfSummonerSpell": "", 
+      "hideIfSummonerSpell": "", 
+      "items": [
+        {
+          "id": "3157", 
+          "count": 1, 
+          "hideCount": false
+        }, 
+        {
+          "id": "3152", 
+          "count": 1, 
+          "hideCount": false
+        }, 
+        {
+          "id": "3026", 
+          "count": 1, 
+          "hideCount": false
+        }
+      ]
+    }, 
+    {
+      "type": "consumables", 
+      "recMath": false, 
+      "recSteps": false, 
+      "minSummonerLevel": -1, 
+      "maxSummonerLevel": -1, 
+      "showIfSummonerSpell": "", 
+      "hideIfSummonerSpell": "", 
+      "items": [
+        {
+          "id": "2003", 
+          "count": 1, 
+          "hideCount": true
+        }, 
+        {
+          "id": "2055", 
+          "count": 1, 
+          "hideCount": true
+        }, 
+        {
+          "id": "2139", 
+          "count": 1, 
+          "hideCount": true
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+PreLoadBuildingBlocks = {
+{Function=BBPreloadModule, Params={Name="Global.CastInstance"}}, 
+{Function=BBPreloadParticle, Params={Name="ekko_base_q_aoe_dilation.troy"}}, 
+{Function=BBPreloadModule, Params={Name="Ekko.EkkoFunctions"}}, 
+{Function=BBPreloadParticle, Params={Name="ekko_base_q_mis_tar.troy"}}, 
+{Function=BBPreloadSpell, Params={Name="ekkoslow"}}, 
+{Function=BBPreloadSpell, Params={Name="ekkoqmisended"}}, 
+{Function=BBPreloadParticle, Params={Name="ekko_base_q_aoe_resolve.troy"}}, 
+{Function=BBPreloadSpell, Params={Name="ekkoqreturndead"}}, 
+{Function=BBPreloadSpell, Params={Name="ekkoqreturn"}}, 
+}

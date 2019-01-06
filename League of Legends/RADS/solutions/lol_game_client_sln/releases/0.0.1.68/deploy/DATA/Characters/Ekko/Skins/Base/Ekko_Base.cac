@@ -1,0 +1,757 @@
+{
+    "CACCooldown" : 0.0,
+    "situations" :
+    [
+        {
+            "situationName" : "AttackMinion2D", 
+            "rules" :
+            [
+                {
+                    "ruleName" : "AttackMinion",
+                    "conditions" :
+                    {
+                        "ruleCoolDown" : 35
+                    },
+                    "actions" :
+                    {
+                        "VO" :
+                        {
+                            "actionName" : "VOAttackMinion"
+                            , "selfEventName" : "AttackMinion2D"
+                            , "allyEventName" : ""
+                            , "enemyEventName" : ""
+                            , "spectatorEventName" : ""
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "situationName" : "RecallWindDown", 
+            "rules" :
+            [
+                {
+                    "ruleName" : "RecallEnd",
+                    "conditions" :
+                    {
+
+                    },
+                    "actions" :
+                    {
+                        "VO" :
+                        {
+                            "actionName" : "VORecallEnd"
+                            , "selfEventName" : "RecallWindDown3D"
+                            , "allyEventName" : ""
+                            , "enemyEventName" : ""
+                            , "spectatorEventName" : ""
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "situationName" : "MoveOrder2D", 
+            "cooldown" : 16,
+            "rules" :
+            [
+                {
+                    "ruleName" : "MoveDistance",
+                    "conditions" :
+                    {
+                        "distance" :
+                        {
+                            "value" : 900,
+                            "op" : ">"
+                        }
+                    },
+                    "actions" :
+                    {
+                        "VO" :
+                        {
+                            "actionName" : "VOMoveDistance"
+                            , "selfEventName" : "MoveOrder2D"
+                            , "allyEventName" : ""
+                            , "enemyEventName" : ""
+                            , "spectatorEventName" : ""
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "situationName" : "Taunt", 
+            "rules" :
+            [
+                {
+                    "ruleName" : "TauntCaitlyn",
+                    "conditions" :
+                    {
+                        "nearestEnemyChampion" :
+                        {
+                            "characterName" : "Caitlyn"
+                        }
+                    },
+                    "actions" :
+                    {
+                        "VO" :
+                        {
+                            "actionName" : "VOTauntCaitlyn"
+                            , "selfEventName" : "Taunt3DCaitlyn"
+                            , "allyEventName" : "Taunt3DCaitlyn"
+                            , "enemyEventName" : "Taunt3DCaitlyn"
+                            , "spectatorEventName" : "Taunt3DCaitlyn"
+                        }
+                    }
+                },
+                {
+                    "ruleName" : "TauntGaren",
+                    "conditions" :
+                    {
+                        "nearestEnemyChampion" :
+                        {
+                            "characterName" : "Garen"
+                        }
+                    },
+                    "actions" :
+                    {
+                        "VO" :
+                        {
+                            "actionName" : "VOTauntGaren"
+                            , "selfEventName" : "Taunt3DGaren"
+                            , "allyEventName" : "Taunt3DGaren"
+                            , "enemyEventName" : "Taunt3DGaren"
+                            , "spectatorEventName" : "Taunt3DGaren"
+                        }
+                    }
+                },
+                {
+                    "ruleName" : "TauntJayce",
+                    "conditions" :
+                    {
+                        "nearestEnemyChampion" :
+                        {
+                            "characterName" : "Jayce"
+                        }
+                    },
+                    "actions" :
+                    {
+                        "VO" :
+                        {
+                            "actionName" : "VOTauntJayce"
+                            , "selfEventName" : "Taunt3DJayce"
+                            , "allyEventName" : "Taunt3DJayce"
+                            , "enemyEventName" : "Taunt3DJayce"
+                            , "spectatorEventName" : "Taunt3DJayce"
+                        }
+                    }
+                },
+                {
+                    "ruleName" : "TauntJinx",
+                    "conditions" :
+                    {
+                        "nearestEnemyChampion" :
+                        {
+                            "characterName" : "Jinx"
+                        }
+                    },
+                    "actions" :
+                    {
+                        "VO" :
+                        {
+                            "actionName" : "VOTauntJinx"
+                            , "selfEventName" : "Taunt3DJinx"
+                            , "allyEventName" : "Taunt3DJinx"
+                            , "enemyEventName" : "Taunt3DJinx"
+                            , "spectatorEventName" : "Taunt3DJinx"
+                        }
+                    }
+                },
+                {
+                    "ruleName" : "TauntMundo",
+                    "conditions" :
+                    {
+                        "nearestEnemyChampion" :
+                        {
+                            "characterName" : "DrMundo"
+                        }
+                    },
+                    "actions" :
+                    {
+                        "VO" :
+                        {
+                            "actionName" : "VOTauntMundo"
+                            , "selfEventName" : "Taunt3DMundo"
+                            , "allyEventName" : "Taunt3DMundo"
+                            , "enemyEventName" : "Taunt3DMundo"
+                            , "spectatorEventName" : "Taunt3DMundo"
+                        }
+                    }
+                },
+                {
+                    "ruleName" : "TauntSinged",
+                    "conditions" :
+                    {
+                        "nearestEnemyChampion" :
+                        {
+                            "characterName" : "Singed"
+                        }
+                    },
+                    "actions" :
+                    {
+                        "VO" :
+                        {
+                            "actionName" : "VOTauntSinged"
+                            , "selfEventName" : "Taunt3DSinged"
+                            , "allyEventName" : "Taunt3DSinged"
+                            , "enemyEventName" : "Taunt3DSinged"
+                            , "spectatorEventName" : "Taunt3DSinged"
+                        }
+                    }
+                },
+                {
+                    "ruleName" : "TauntTwitch",
+                    "conditions" :
+                    {
+                        "nearestEnemyChampion" :
+                        {
+                            "characterName" : "Twitch"
+                        }
+                    },
+                    "actions" :
+                    {
+                        "VO" :
+                        {
+                            "actionName" : "VOTauntTwitch"
+                            , "selfEventName" : "Taunt3DTwitch"
+                            , "allyEventName" : "Taunt3DTwitch"
+                            , "enemyEventName" : "Taunt3DTwitch"
+                            , "spectatorEventName" : "Taunt3DTwitch"
+                        }
+                    }
+                },
+                {
+                    "ruleName" : "TauntUrgot",
+                    "conditions" :
+                    {
+                        "nearestEnemyChampion" :
+                        {
+                            "characterName" : "Urgot"
+                        }
+                    },
+                    "actions" :
+                    {
+                        "VO" :
+                        {
+                            "actionName" : "VOTauntUrgot"
+                            , "selfEventName" : "Taunt3DUrgot"
+                            , "allyEventName" : "Taunt3DUrgot"
+                            , "enemyEventName" : "Taunt3DUrgot"
+                            , "spectatorEventName" : "Taunt3DUrgot"
+                        }
+                    }
+                },
+                {
+                    "ruleName" : "TauntVelkoz",
+                    "conditions" :
+                    {
+                        "nearestEnemyChampion" :
+                        {
+                            "characterName" : "Velkoz"
+                        }
+                    },
+                    "actions" :
+                    {
+                        "VO" :
+                        {
+                            "actionName" : "VOTauntVelkoz"
+                            , "selfEventName" : "Taunt3DVelkoz"
+                            , "allyEventName" : "Taunt3DVelkoz"
+                            , "enemyEventName" : "Taunt3DVelkoz"
+                            , "spectatorEventName" : "Taunt3DVelkoz"
+                        }
+                    }
+                },
+                {
+                    "ruleName" : "TauntVi",
+                    "conditions" :
+                    {
+                        "nearestEnemyChampion" :
+                        {
+                            "characterName" : "Vi"
+                        }
+                    },
+                    "actions" :
+                    {
+                        "VO" :
+                        {
+                            "actionName" : "VOTauntVi"
+                            , "selfEventName" : "Taunt3DVi"
+                            , "allyEventName" : "Taunt3DVi"
+                            , "enemyEventName" : "Taunt3DVi"
+                            , "spectatorEventName" : "Taunt3DVi"
+                        }
+                    }
+                },
+                {
+                    "ruleName" : "TauntViktor",
+                    "conditions" :
+                    {
+                        "nearestEnemyChampion" :
+                        {
+                            "characterName" : "Viktor"
+                        }
+                    },
+                    "actions" :
+                    {
+                        "VO" :
+                        {
+                            "actionName" : "VOTauntViktor"
+                            , "selfEventName" : "Taunt3DViktor"
+                            , "allyEventName" : "Taunt3DViktor"
+                            , "enemyEventName" : "Taunt3DViktor"
+                            , "spectatorEventName" : "Taunt3DViktor"
+                        }
+                    }
+                },
+                {
+                    "ruleName" : "TauntZilean",
+                    "conditions" :
+                    {
+                        "nearestEnemyChampion" :
+                        {
+                            "characterName" : "Zilean"
+                        }
+                    },
+                    "actions" :
+                    {
+                        "VO" :
+                        {
+                            "actionName" : "VOTauntZilean"
+                            , "selfEventName" : "Taunt3DZilean"
+                            , "allyEventName" : "Taunt3DZilean"
+                            , "enemyEventName" : "Taunt3DZilean"
+                            , "spectatorEventName" : "Taunt3DZilean"
+                        }
+                    }
+                },
+                {
+                    "ruleName" : "TauntViAlly",
+                    "conditions" :
+                    {
+                        "nearestAllyChampion" :
+                        {
+                            "characterName" : "Vi"
+                        }
+                    },
+                    "actions" :
+                    {
+                        "VO" :
+                        {
+                            "actionName" : "VOTauntViAlly"
+                            , "selfEventName" : "Taunt3DViAlly"
+                            , "allyEventName" : "Taunt3DViAlly"
+                            , "enemyEventName" : "Taunt3DViAlly"
+                            , "spectatorEventName" : "Taunt3DViAlly"
+                        }
+                    }
+                },
+                {
+                    "ruleName" : "TauntPiltover",
+                    "conditions" :
+                    {
+                        "nearestEnemyChampion" :
+                        {
+                            "metadata" :
+                            {
+                                "category" : "faction",
+                                "value" : "piltover"
+                            }
+                        }
+                    },
+                    "actions" :
+                    {
+                        "VO" :
+                        {
+                            "actionName" : "VOTauntPiltover"
+                            , "selfEventName" : "Taunt3DPiltover"
+                            , "allyEventName" : "Taunt3DPiltover"
+                            , "enemyEventName" : "Taunt3DPiltover"
+                            , "spectatorEventName" : "Taunt3DPiltover"
+                        }
+                    }
+                },
+                {
+                    "ruleName" : "TauntZaun",
+                    "conditions" :
+                    {
+                        "nearestEnemyChampion" :
+                        {
+                            "metadata" :
+                            {
+                                "category" : "faction",
+                                "value" : "zaun"
+                            }
+                        }
+                    },
+                    "actions" :
+                    {
+                        "VO" :
+                        {
+                            "actionName" : "VOTauntZaun"
+                            , "selfEventName" : "Taunt3DZaun"
+                            , "allyEventName" : "Taunt3DZaun"
+                            , "enemyEventName" : "Taunt3DZaun"
+                            , "spectatorEventName" : "Taunt3DZaun"
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "situationName" : "AttackChampion2D", 
+            "rules" :
+            [
+                {
+                    "ruleName" : "AttackChamp",
+                    "conditions" :
+                    {
+                        "ruleCoolDown" : 15
+                    },
+                    "actions" :
+                    {
+                        "VO" :
+                        {
+                            "actionName" : "VOAttackChamp"
+                            , "selfEventName" : "AttackChampion2D"
+                            , "allyEventName" : ""
+                            , "enemyEventName" : ""
+                            , "spectatorEventName" : ""
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "situationName" : "BuyItem", 
+            "cooldown" : 15,
+            "rules" :
+            [
+                {
+                    "ruleName" : "3157_Zhonyas",
+                    "conditions" :
+                    {
+                        "itemID" : 3157,
+                        "ruleCoolDown" : 5,
+                        "maxOccurrence" : 1
+                    },
+                    "actions" :
+                    {
+                        "VO" :
+                        {
+                            "actionName" : "VOZhonyas"
+                            , "selfEventName" : "BuyItem2D3157"
+                            , "allyEventName" : ""
+                            , "enemyEventName" : ""
+                            , "spectatorEventName" : ""
+                        }
+                    }
+                },
+                {
+                    "ruleName" : "2139_ElixirSorcery",
+                    "conditions" :
+                    {
+                        "itemID" : 2139,
+                        "ruleCoolDown" : 5,
+                        "maxOccurrence" : 1
+                    },
+                    "actions" :
+                    {
+                        "VO" :
+                        {
+                            "actionName" : "VOElixerSorcery"
+                            , "selfEventName" : "BuyItem2D2139"
+                            , "allyEventName" : ""
+                            , "enemyEventName" : ""
+                            , "spectatorEventName" : ""
+                        }
+                    }
+                },
+                {
+                    "ruleName" : "3100_LichBane",
+                    "conditions" :
+                    {
+                        "itemID" : 3100,
+                        "ruleCoolDown" : 5,
+                        "maxOccurrence" : 1
+                    },
+                    "actions" :
+                    {
+                        "VO" :
+                        {
+                            "actionName" : "VOLichBane"
+                            , "selfEventName" : "BuyItem2D3100"
+                            , "allyEventName" : ""
+                            , "enemyEventName" : ""
+                            , "spectatorEventName" : ""
+                        }
+                    }
+                },
+                {
+                    "ruleName" : "3089_Deathcap",
+                    "conditions" :
+                    {
+                        "itemID" : 3089,
+                        "ruleCoolDown" : 5,
+                        "maxOccurrence" : 1
+                    },
+                    "actions" :
+                    {
+                        "VO" :
+                        {
+                            "actionName" : "VODeathcap"
+                            , "selfEventName" : "BuyItem2D3089"
+                            , "allyEventName" : ""
+                            , "enemyEventName" : ""
+                            , "spectatorEventName" : ""
+                        }
+                    }
+                },
+                {
+                    "ruleName" : "3135_VoidStaff",
+                    "conditions" :
+                    {
+                        "itemID" : 3135,
+                        "ruleCoolDown" : 5,
+                        "maxOccurrence" : 1
+                    },
+                    "actions" :
+                    {
+                        "VO" :
+                        {
+                            "actionName" : "VOVoidStaff"
+                            , "selfEventName" : "BuyItem2D3135"
+                            , "allyEventName" : ""
+                            , "enemyEventName" : ""
+                            , "spectatorEventName" : ""
+                        }
+                    }
+                },
+                {
+                    "ruleName" : "3026_GuardianAngel",
+                    "conditions" :
+                    {
+                        "itemID" : 3026,
+                        "ruleCoolDown" : 5,
+                        "maxOccurrence" : 1
+                    },
+                    "actions" :
+                    {
+                        "VO" :
+                        {
+                            "actionName" : "VOGuardianAngel"
+                            , "selfEventName" : "BuyItem2D3026"
+                            , "allyEventName" : ""
+                            , "enemyEventName" : ""
+                            , "spectatorEventName" : ""
+                        }
+                    }
+                },
+                {
+                    "ruleName" : "3027_RodOfAges",
+                    "conditions" :
+                    {
+                        "itemID" : 3027,
+                        "ruleCoolDown" : 5,
+                        "maxOccurrence" : 1
+                    },
+                    "actions" :
+                    {
+                        "VO" :
+                        {
+                            "actionName" : "VORodOfAges"
+                            , "selfEventName" : "BuyItem2D3027"
+                            , "allyEventName" : ""
+                            , "enemyEventName" : ""
+                            , "spectatorEventName" : ""
+                        }
+                    }
+                },
+                {
+                    "ruleName" : "3078_TrinityForce",
+                    "conditions" :
+                    {
+                        "itemID" : 3078,
+                        "ruleCoolDown" : 5,
+                        "maxOccurrence" : 1
+                    },
+                    "actions" :
+                    {
+                        "VO" :
+                        {
+                            "actionName" : "VOTrinityForce"
+                            , "selfEventName" : "BuyItem2D3078"
+                            , "allyEventName" : ""
+                            , "enemyEventName" : ""
+                            , "spectatorEventName" : ""
+                        }
+                    }
+                },
+                {
+                    "ruleName" : "3115_NashorsTooth",
+                    "conditions" :
+                    {
+                        "itemID" : 3115,
+                        "ruleCoolDown" : 5,
+                        "maxOccurrence" : 1
+                    },
+                    "actions" :
+                    {
+                        "VO" :
+                        {
+                            "actionName" : "VONashorsTooth"
+                            , "selfEventName" : "BuyItem2D3115"
+                            , "allyEventName" : ""
+                            , "enemyEventName" : ""
+                            , "spectatorEventName" : ""
+                        }
+                    }
+                },
+                {
+                    "ruleName" : "3146_Gunblade",
+                    "conditions" :
+                    {
+                        "itemID" : 3146,
+                        "ruleCoolDown" : 5,
+                        "maxOccurrence" : 1
+                    },
+                    "actions" :
+                    {
+                        "VO" :
+                        {
+                            "actionName" : "VOGunblade"
+                            , "selfEventName" : "BuyItem2D3146"
+                            , "allyEventName" : ""
+                            , "enemyEventName" : ""
+                            , "spectatorEventName" : ""
+                        }
+                    }
+                },
+                {
+                    "ruleName" : "NoRuleName",
+                    "conditions" :
+                    {
+
+                    },
+                    "actions" :
+                    {
+
+                    }
+                }
+            ]
+        },
+        {
+            "situationName" : "FirstMove2D", 
+            "rules" :
+            [
+                {
+                    "ruleName" : "FirstMove",
+                    "conditions" :
+                    {
+
+                    },
+                    "actions" :
+                    {
+                        "VO" :
+                        {
+                            "actionName" : "VOFirstMove"
+                            , "selfEventName" : "FirstMove2D"
+                            , "allyEventName" : ""
+                            , "enemyEventName" : ""
+                            , "spectatorEventName" : ""
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "situationName" : "Joke", 
+            "rules" :
+            [
+                {
+                    "ruleName" : "JokePiltover",
+                    "conditions" :
+                    {
+                        "nearestEnemyChampion" :
+                        {
+                            "metadata" :
+                            {
+                                "category" : "faction",
+                                "value" : "piltover"
+                            }
+                        }
+                    },
+                    "actions" :
+                    {
+                        "VO" :
+                        {
+                            "actionName" : "VOJokePiltover"
+                            , "selfEventName" : "Joke3DPiltover"
+                            , "allyEventName" : "Joke3DPiltover"
+                            , "enemyEventName" : "Joke3DPiltover"
+                            , "spectatorEventName" : "Joke3DPiltover"
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "situationName" : "RecallLeadIn", 
+            "rules" :
+            [
+                {
+                    "ruleName" : "Recall",
+                    "conditions" :
+                    {
+
+                    },
+                    "actions" :
+                    {
+                        "VO" :
+                        {
+                            "actionName" : "VORecall"
+                            , "selfEventName" : "RecallLeadIn3D"
+                            , "allyEventName" : "RecallLeadIn3D"
+                            , "enemyEventName" : "RecallLeadIn3D"
+                            , "spectatorEventName" : "RecallLeadIn3D"
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "situationName" : "Respawn2D", 
+            "rules" :
+            [
+                {
+                    "ruleName" : "RespawnGeneric",
+                    "conditions" :
+                    {
+
+                    },
+                    "actions" :
+                    {
+                        "VO" :
+                        {
+                            "actionName" : "VORespawn"
+                            , "selfEventName" : "Respawn2D"
+                            , "allyEventName" : ""
+                            , "enemyEventName" : ""
+                            , "spectatorEventName" : ""
+                        }
+                    }
+                }
+            ]
+        }
+    ]
+}
